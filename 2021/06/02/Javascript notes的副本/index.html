@@ -16,15 +16,15 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="JavaScript 是 Web 的编程语言。所有现代的 HTML 页面都使用 JavaScript。 曾经有一份绝顶牛批的学习文档摆在我面前，而我却没有珍惜，失去之后才后悔莫及。 测试1测试2测试3">
+    <meta name="description" content="JavaScript 是 Web 的编程语言。所有现代的 HTML 页面都使用 JavaScript。 曾经有一份绝顶牛批的学习文档摆在我面前，而我却没有珍惜，失去之后才后悔莫及。 1. 浏览器知识拓展1. 主流浏览器都有哪些？内核分别是什么？   主流浏览器 内核    Chrome Webkit&#x2F;Blink(2014)   Firefox Gecko   IE Trident   S">
 <meta property="og:type" content="article">
 <meta property="og:title" content="重学 JavaScript">
 <meta property="og:url" content="http://example.com/2021/06/02/Javascript%20notes%E7%9A%84%E5%89%AF%E6%9C%AC/index.html">
 <meta property="og:site_name" content="大大大前端一位，小小小北漂一枚">
-<meta property="og:description" content="JavaScript 是 Web 的编程语言。所有现代的 HTML 页面都使用 JavaScript。 曾经有一份绝顶牛批的学习文档摆在我面前，而我却没有珍惜，失去之后才后悔莫及。 测试1测试2测试3">
+<meta property="og:description" content="JavaScript 是 Web 的编程语言。所有现代的 HTML 页面都使用 JavaScript。 曾经有一份绝顶牛批的学习文档摆在我面前，而我却没有珍惜，失去之后才后悔莫及。 1. 浏览器知识拓展1. 主流浏览器都有哪些？内核分别是什么？   主流浏览器 内核    Chrome Webkit&#x2F;Blink(2014)   Firefox Gecko   IE Trident   S">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-06-02T05:04:51.000Z">
-<meta property="article:modified_time" content="2022-03-03T06:34:47.552Z">
+<meta property="article:modified_time" content="2022-03-03T06:37:49.886Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="原创">
 <meta property="article:tag" content="javascript">
@@ -211,7 +211,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          92 字
+          483 字
         
       </span>
     
@@ -222,7 +222,7 @@
         
         
         
-          1 分钟
+          5 分钟
         
       </span>
     
@@ -274,7 +274,64 @@
               
               <p>JavaScript 是 Web 的编程语言。所有现代的 HTML 页面都使用 JavaScript。</p>
 <p>曾经有一份绝顶牛批的学习文档摆在我面前，而我却没有珍惜，失去之后才后悔莫及。</p>
-<h2 id="测试1"><a href="#测试1" class="headerlink" title="测试1"></a>测试1</h2><h3 id="测试2"><a href="#测试2" class="headerlink" title="测试2"></a>测试2</h3><h4 id="测试3"><a href="#测试3" class="headerlink" title="测试3"></a>测试3</h4>
+<h2 id="1-浏览器知识拓展"><a href="#1-浏览器知识拓展" class="headerlink" title="1. 浏览器知识拓展"></a>1. 浏览器知识拓展</h2><h3 id="1-主流浏览器都有哪些？内核分别是什么？"><a href="#1-主流浏览器都有哪些？内核分别是什么？" class="headerlink" title="1. 主流浏览器都有哪些？内核分别是什么？"></a>1. 主流浏览器都有哪些？内核分别是什么？</h3><table>
+<thead>
+<tr>
+<th>主流浏览器</th>
+<th>内核</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Chrome</td>
+<td>Webkit&#x2F;Blink(2014)</td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td>Gecko</td>
+</tr>
+<tr>
+<td>IE</td>
+<td>Trident</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>Webkit</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td>Presto</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="2-浏览器的组成部分"><a href="#2-浏览器的组成部分" class="headerlink" title="2. 浏览器的组成部分"></a>2. 浏览器的组成部分</h3><ol>
+<li>shell部分(浏览器的外壳，图形界面)</li>
+<li>内核部分<ul>
+<li>渲染引擎（语法规则和渲染）</li>
+<li>Javascript 引擎</li>
+<li>其他模块</li>
+</ul>
+</li>
+</ol>
+<h2 id="2-引入方式"><a href="#2-引入方式" class="headerlink" title="2. 引入方式"></a>2. 引入方式</h2><ol>
+<li>内联脚本</li>
+</ol>
+<p>基本语法</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><br>	...<br><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>外链脚本</li>
+</ol>
+<p>基本语法</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs javascript">&lt;script src=<span class="hljs-string">&quot;./js/main.js&quot;</span>&gt;<br></code></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>. 内嵌脚本</li>
+</ol>
+<p>基本语法</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">function()</span> &#123;<span class="hljs-attr">console.log</span>(&#x27;内嵌脚本&#x27;)&#125;&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="4-Web标准"><a href="#4-Web标准" class="headerlink" title="4.Web标准"></a>4.Web标准</h3><p>W3C标准：结构、样式、行为相分离，通常都会采用外链的方式</p>
+
               
             </div>
             <hr/>
